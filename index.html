@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mis Trabajos de Infovis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad deportiva - Santiago Sanchez</title>
+    
+    <!-- Script de Flourish -->
     <script src="https://public.flourish.studio/resources/embed.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 0 15px;
+            color: #333;
+        }
+        .chart-container {
+            margin-bottom: 50px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-<object type="image/svg+xml" data="Actividad deportiva.svg"></object>
+
+    <h1>Exploración Visual de Datos Personales</h1>
+    <p>Registro de actividad física, consumo y esfuerzo durante el mes de Agosto 2026.</p>
+
+    <!-- Visualización 1: RAWGraphs (SVG) -->
+    <div class="chart-container">
+        <h2>¿Cómo fluyen las actividades físicas según el horario y las bebidas consumidas?</h2>
+        <object type="image/svg+xml" data="Actividad deportiva.svg" width="100%"></object>
+    </div>
+
+    <!-- Visualización 2: Flourish (Streamgraph) -->
+    <div class="chart-container">
+        <h2>¿Cómo evolucionó el gasto calórico diario por actividad a lo largo del mes?</h2>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/30193952">
+            <noscript>
+                <img src="https://public.flourish.studio/visualisation/30193952/thumbnail" width="100%" alt="chart visualization" />
+            </noscript>
+        </div>
+    </div>
+
+</body>
+</html>
