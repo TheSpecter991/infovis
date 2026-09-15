@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,30 +16,62 @@
             max-width: 1000px;
             padding: 0 15px;
             color: #333;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #1a252f;
+            margin-bottom: 10px;
+        }
+        .intro {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #555;
         }
         .chart-container {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             background: #fff;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
         h2 {
             color: #2c3e50;
             font-size: 1.3rem;
+            margin-top: 0;
             margin-bottom: 15px;
+        }
+        .conclusion {
+            background-color: #eef6fc;
+            border-left: 5px solid #2980b9;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .conclusion h3 {
+            margin: 0;
+            color: #1b4f72;
+            font-size: 1.15rem;
+        }
+        object, img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
 
     <h1>Exploración Visual de Datos Personales</h1>
-    <p>Registro de actividad física, consumo y esfuerzo durante el mes de Agosto 2026. Objetivo, buscar un equilibrio entre actividades. Conociendo a que actividades se dedica mas tiempos, esfuerzos, rendimiento calorico y la recuperación que implicó, con el fin de ajustar los entrenamientos para Septiembre. </p>
+    <p class="intro">
+        Registro de actividad física, consumo y esfuerzo durante el mes de Agosto 2026. Objetivo: buscar un equilibrio entre actividades, conociendo a qué disciplinas se dedica más tiempo, esfuerzo, rendimiento calórico y la recuperación que implicó, con el fin de ajustar los entrenamientos para Septiembre.
+    </p>
 
-    <!-- Visualización 1: RAWGraphs (SVG) -->
+    <!-- Visualización 1: RAWGraphs (Alluvial Diagram - Actividad deportiva2.svg) -->
     <div class="chart-container">
-        <h2>¿Cómo fluyen las actividades físicas según el horario y las bebidas consumidas?</h2>
-        <object type="image/svg+xml" data="Actividad deportiva.svg" width="100%"></object>
+        <h2>¿Cómo fluyen las actividades físicas según el mes y el lugar de entrenamiento?</h2>
+        <object type="image/svg+xml" data="Actividad deportiva2.svg" width="100%"></object>
     </div>
 
     <!-- Visualización 2: Flourish (Streamgraph) -->
