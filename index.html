@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -65,23 +64,22 @@ HTML
 
     <h1>Exploración Visual de Datos Personales</h1>
     <p class="intro">
-        Registro de actividad física, consumo y esfuerzo durante el mes de Agosto 2026. Objetivo: buscar un equilibrio entre actividades, conociendo a qué disciplinas se dedica más tiempo, esfuerzo, rendimiento calórico y la recuperación que implicó, con el fin de ajustar los entrenamientos para Septiembre.
+        Registro de actividad física, consumo y esfuerzo durante los meses de Julio y Agosto 2026. Objetivo: buscar un equilibrio entre actividades, conociendo a qué disciplinas se dedica más tiempo, esfuerzo, rendimiento calórico y la recuperación que implicó, con el fin de ajustar los entrenamientos para Septiembre.
     </p>
 
-<!-- Visualización 3: RAWGraphs (Sunburst Diagram - NUEVO) -->
+    <!-- Visualización 1: RAWGraphs (Sunburst Diagram) -->
     <div class="chart-container">
         <h2>¿Cómo se distribuyen jerárquicamente las actividades físicas por mes y momento del día?</h2>
         <object type="image/svg+xml" data="Actividades por mes2.svg" width="100%"></object>
     </div>
 
-    
-    <!-- Visualización 1: RAWGraphs (Alluvial Diagram - Actividad deportiva3.svg) -->
+    <!-- Visualización 2: RAWGraphs (Alluvial Diagram) -->
     <div class="chart-container">
         <h2>¿Cómo fluyen las actividades físicas según el mes y el lugar de entrenamiento?</h2>
         <object type="image/svg+xml" data="Actividad deportiva3.svg" width="100%"></object>
     </div>
 
-<!-- Visualización 2: Flourish (Área interactiva de Julio y Agosto) -->
+    <!-- Visualización 3: Flourish (Área interactiva de Julio y Agosto) -->
     <div class="chart-container">
         <h2>¿Cómo evolucionó la duración, gasto calórico y nivel de esfuerzo a lo largo de Julio y Agosto?</h2>
         <div class="flourish-embed flourish-chart" data-src="visualisation/30173694">
@@ -92,9 +90,7 @@ HTML
         </div>
     </div>
 
-
-
-<!-- Visualización 4: Datawrapper (Scatter Plot Actualizado) -->
+    <!-- Visualización 4: Datawrapper (Scatter Plot) -->
     <div class="chart-container">
         <h2>¿Existe relación entre la duración del entrenamiento y el nivel de esfuerzo percibido?</h2>
         <iframe title="Relación de esfuerzo y duración según la actividad" id="datawrapper-chart-Kb790" src="https://datawrapper.dwcdn.net/Kb790/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe>
@@ -103,19 +99,23 @@ HTML
         </script>
     </div>
 
-<!-- Visualización 4: Tableau (Eficiencia Energética por Minuto) -->
+    <!-- Visualización 5: Tableau (Eficiencia Energética por Minuto) -->
     <div class="chart-container">
         <h2>Eficiencia Energética: Promedio de Gasto Calórico por Minuto según Actividad</h2>
         <div class="tableau-wrapper" style="width: 100%; overflow: hidden;">
-            
-            <!-- Código de inserción de Tableau optimizado -->
-            <script type="text/javascript" src="https://us-east-1.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+            <script type="module" src="https://us-east-1.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
             <tableau-viz id="tableau-viz" 
                          src="https://us-east-1.online.tableau.com/t/santiagosanchez-3d27572f9f/views/TPmodulo4/Hoja1" 
                          style="width: 100%; height: 600px;" 
                          toolbar="bottom">
             </tableau-viz>
-
         </div>
     </div>
 
+    <!-- Conclusión Final -->
+    <div class="conclusion">
+        <h3>Conclusión: Se procederá a realizar mayor actividad de running, con un poco menos de fuerza, así no sobrecargar actividades.</h3>
+    </div>
+
+</body>
+</html>
